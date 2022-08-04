@@ -1,0 +1,180 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.searchbar{
+    outline: 1px solid black;
+    background-color: rgb(64,64,64);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    height: 80px;
+    line-height: 20px;
+    color: white;
+    border-top: 7px #9D0BFF solid;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.searchbar *{
+    align-self: center;
+    height: 40%;
+}
+
+.searchbar button{
+  width: 80px;
+  height: 25px;
+  border: 1px solid black;
+  background-color: #9D0BFF;
+  color: white;
+  font-weight: bold;
+  box-shadow: 2px 2px black;
+}
+
+.searchbar button:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+.searchbar_search{
+    /* outline: 1px solid blue; */
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.searchbar_search input{
+    width: 300px;
+    border: 3px solid black;
+}
+
+.content{
+    /* outline: solid 1px blue; */
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.video_player{
+  /* outline: 1px red solid; */
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video_player video{
+    object-fit: fill;
+    height: 364px;
+    width: 550px;
+    border: solid 3px black;
+}
+
+.content_videplayer_detail{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.content_videplayer_detail *{
+    margin: 0 ;
+}
+
+ .content_videoplayer_detail_section1{
+    /* outline: solid 1px green; */
+    width: 350px;
+} 
+
+
+.content_videoplayer_detail_section2 button{
+    background-color: #9D0BFF;
+    border: 1px solid black;
+    height: 25px;
+    width: 100px;
+    color: white;
+    box-shadow: 3px 3px black;
+}
+
+.details_user{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    color: #9D0BFF;
+    /* outline: solid 1px dodgerblue; */
+}
+
+.details_user img{
+    width: 50px;
+    height: 50px;
+    /* outline: 1px red solid; */
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.video_list{
+    width: 40%;
+    /* outline: solid blue 1px; */
+    display: flex; 
+    flex-direction: col;
+    flex-wrap: wrap;
+}
+
+.video_list_title{
+    /* outline: green solid 1px; */
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    flex: col;
+    flex-wrap: wrap;
+}
+
+.vide_list_title p{
+    align-self: center;
+}
+
+.video_list_content{
+    border-top: solid 3px darkgray;
+    /* outline: red solid 1px; */
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 30px 10px;
+    font-weight: bold;
+    font-size: x-large;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.video_list_content *{
+    margin: 0;
+}
+
+.video_list * { 
+  text-align: 10px;
+}
+
+.video_list_content video{
+    object-fit: fill;
+    height: 91px;
+    width: 137px;
+    border: solid 3px black;
+}
+
+.video_preview video:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="videolab.css" type="text/css">
+    <script src="videolab.js"></script>
+</head>
+<body>
+    <!--Main Div-->
+    <div id="main">
+      <!-- Search Bar-->
+      <div class="searchbar">
+        <!--Search Input-->
+        <div class="searchbar_search">
+          <h1>VideoLab</h1>
+          <input type="text" placeholder="Search">
+        </div>
+        <!--Search Button-->
+        <button onclick="change_button_login(this)">Login</button>         
+      </div>    
+      
+      <!--Web Content-->
+      <div class="content">
+        <!--Video Player-->
+        <div class="video_player">
+          <video id="playervideo" src="vid/RiverBridge.mp4" controls></video>
+          <!--Vide Player Detail-->
+          <div class="content_videplayer_detail">
+            <div class="content_videoplayer_detail_section1">
+              <h1 id="playervideo_name">River Bridge</h1>
+              <!--Video Player Details-->
+              <div class="details">
+               <p>1,3k views</p>
+               <p>|</p>
+               <p>June 18, 2021</p>
+              </div>
+            </div>
+            <div class="content_videoplayer_detail_section2">
+               <button>Suscribe</button>
+            </div>
+          </div>
+          <!--Video Player User-->
+          <div class="details_user">
+            <img src="assets/user.png" alt="imagen de usuario no encontrada">
+            <p>Example user name</p>
+          </div>
+        </div>
+        <!--Video List-->
+        <div class="video_list">
+          <!--Video List Title-->
+          <div class="video_list_title">
+            <p>Click on a Video of the list - Mouse over any video for preview</p>
+          </div>
+          
+          <!--Video List Content-->
+          <div class="video_list_content">
+            <div class="video_preview">
+              <video title="River Bridge" src="vid/RiverBridge.mp4" loop muted onmouseover="preview(this)" onmouseleave="stoppreview(this)" onclick="repvid(this)"></video>
+              <p>River Bridge</p>
+            </div>
+            <div class="video_preview">
+              <video title="Snow Cabin" src="vid/snowcabin.mp4" loop muted onmouseover="preview(this)" onmouseleave="stoppreview(this)" onclick="repvid(this)"></video>
+              <p>Snow Cabin</p>
+            </div>
+            <div class="video_preview">
+              <video title="beach" src="vid/beach.mp4" loop muted onmouseover="preview(this)" onmouseleave="stoppreview(this)" onclick="repvid(this)"></video>
+              <p>Beach</p>
+            </div>
+            <div class="video_preview">
+              <video title="Meadow" src="vid/mixkit-countryside-meadow-4075.mp4" loop muted onmouseover="preview(this)" onmouseleave="stoppreview(this)" onclick="repvid(this)"></video>
+              <p>Meadow</p>
+            </div>
+            <div class="video_preview">
+              <video title="Seagulls" src="vid/seagulls.mp4" loop muted onmouseover="preview(this)" onmouseleave="stoppreview(this)" onclick="repvid(this)"></video>
+              <p>Seagulls</p>
+            </div>
+            <div class="video_preview">
+              <video title="Papper Boat" src="vid/papperboat.mp4" loop muted onmouseover="preview(this)" onmouseleave="stoppreview(this)" onclick="repvid(this)"></video>
+              <p>Papper Boat</p>
+            </div>
+            <div class="video_preview">
+              <video title="Lake" src="vid/lake.mp4" loop muted onmouseover="preview(this)" onmouseleave="stoppreview(this)" onclick="repvid(this)"></video>
+              <p>Lake</p>
+            </div>
+            <div class="video_preview">
+              <video title="Planet" src="vid/world.mp4" loop muted onmouseover="preview(this)" onmouseleave="stoppreview(this)" onclick="repvid(this)"></video>
+              <p>Planet</p>
+            </div>
+            <div class="video_preview">
+              <video title="Pizza" src="vid/pizza.mp4" loop muted onmouseover="preview(this)" onmouseleave="stoppreview(this)" onclick="repvid(this)"></video>
+              <p>Pizza</p>
+            </div>
+          </div>  
+
+
+        </div>
+      <!--End Webcontent-->  
+      </div>
+   
+      <!--End Main--> 
+   </div>
+</body>
+</html>
